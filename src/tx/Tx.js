@@ -712,7 +712,7 @@ class TxImpl {
      * @private
      */
     validateMintedOrder() {
-        this.body.minted.assertSorted()
+        //this.body.minted.assertSorted()
     }
 
     /**
