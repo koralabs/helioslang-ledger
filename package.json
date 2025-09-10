@@ -1,5 +1,5 @@
 {
-    "name": "@helios-lang/ledger",
+    "name": "@koralabs/helioslang-ledger",
     "version": "0.7.15",
     "description": "Latest ledger types (eg. for building transactions)",
     "main": "src/index.js",
