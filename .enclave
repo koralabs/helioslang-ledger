@@ -1,0 +1,71 @@
+# Exact repository-root-relative paths. No wildcards, no directory prefixes.
+# A change to any of these needs operator approval at merge time (see CANONICAL_CONTRACT.md).
+# Why: these decide addresses, hashes, token arithmetic, native-script hashes and the bytes of a transaction.
+.enclave
+CANONICAL_CONTRACT.md
+package.json
+# Invariant 1: addresses and hashes
+src/address/Address.js
+src/address/ByronAddress.js
+src/address/ShelleyAddress.js
+src/address/SpendingCredential.js
+src/address/StakingAddress.js
+src/address/StakingCredential.js
+src/hashes/DatumHash.js
+src/hashes/MintingPolicyHash.js
+src/hashes/PubKeyHash.js
+src/hashes/StakingValidatorHash.js
+src/hashes/TxId.js
+src/hashes/ValidatorHash.js
+# Invariant 2: money
+src/money/AssetClass.js
+src/money/Assets.js
+src/money/TokenValue.js
+src/money/Value.js
+# Invariant 3: native scripts and signatures
+src/native/AfterScript.js
+src/native/AllScript.js
+src/native/AnyScript.js
+src/native/AtLeastScript.js
+src/native/BeforeScript.js
+src/native/NativeScript.js
+src/native/SigScript.js
+src/signature/PubKey.js
+src/signature/Signature.js
+# Invariant 4: transaction bytes, outputs, datums, redeemers
+src/tx/Tx.js
+src/tx/TxBody.js
+src/tx/TxWitnesses.js
+src/tx/TxOutput.js
+src/tx/TxInput.js
+src/tx/TxOutputId.js
+src/tx/TxOutputDatum.js
+src/tx/InlineTxOutputDatum.js
+src/tx/HashedTxOutputDatum.js
+src/tx/TxRedeemer.js
+src/tx/TxSpendingRedeemer.js
+src/tx/TxMintingRedeemer.js
+src/tx/ScriptContextV2.js
+src/tx/ScriptContextV3.js
+# Invariant 5: network parameters used for fees and budgets
+src/params/NetworkParams.js
+src/params/NetworkParamsHelper.js
+src/params/costmodel.js
+# Tests that pin these behaviours
+src/address/ByronAddress.test.js
+src/address/ShelleyAddress.test.js
+src/address/StakingAddress.test.js
+src/hashes/MintingPolicyHash.test.js
+src/hashes/PubKeyHash.test.js
+src/hashes/StakingValidatorHash.test.js
+src/hashes/ValidatorHash.test.js
+src/money/AssetClass.test.js
+src/money/Assets.test.js
+src/money/Value.test.js
+src/params/NetworkParamsHelper.test.js
+src/signature/PubKey.test.js
+src/signature/Signature.test.js
+src/tx/TxInput.test.js
+src/tx/TxOutputDatum.test.js
+src/tx/Tx.test.js
+src/tx/TxWitnesses.test.js
